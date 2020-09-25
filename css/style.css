@@ -1,0 +1,191 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    /* display: flex;
+    align-items: center; */
+    position: sticky;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Balsamiq Sans', cursive;
+    /* Display block isliye kiya taking pading apply ho top and bottom pe bhi */
+    display: block;
+    padding: 3px 10px;
+    border-radius: 15px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    opacity: 0.4;
+    position: absolute;
+    border-radius: 8px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 130%;
+    z-index: -1;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home */
+#home{
+    display: flex;
+    flex-direction: column ;
+    padding: 10px 20px;
+    height: 390px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../img/BG1.jpg') ;
+    height: 80%;
+    width: 100%;
+    z-index: -2;
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.first{
+    font-size: 2.5rem;
+    padding: 15px;
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.third{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.8rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 10px 20px;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: black;
+   color:white; 
+    font-size: 1rem;
+    cursor: pointer;
+}
+/* Services section */
+#services{
+    /* padding: 42px; */
+    /* margin: 30px; */
+    display: flex;
+    /* background-image: url('../img/BG2.jpg'); */
+
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 15px 6px;
+    border-radius: 25px;
+    background-color: #e6f5d5;
+}
+
+#services .box img{
+    height: 160px;
+    padding: 5px;
+    margin: auto;
+    display: block;
+    /* margin auto se center aane k liye content ka display block aur height ya width deni pdhti h */
+}
+#services .box p{
+    font-family: 'Balsamiq Sans', cursive;
+    /* font-size: 1rem; */
+
+}
+#services{
+
+}
+.text-center{
+    text-align: center;
+}
+.first-services{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 2.5rem;
+    padding: 5px;
+    margin-top: 50px;   
+}
+
+
+/* Contact */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../img/BG3.jpg') center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 300px;
+}
+#contact-box label{
+    color: white;
+    
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 2px solid black;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.2rem;
+}

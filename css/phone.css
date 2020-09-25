@@ -1,0 +1,44 @@
+/* @media (min-width: 250px) and (max-width: 320px){
+   body{
+       width: 100%;
+   }
+} */
+/* Navigation */
+ #navbar{
+     flex-direction: column;
+ }
+ #navbar ul li a{
+     font-size: 1rem;
+     padding: 0px 7px;
+     padding-bottom: 8px;
+ }
+/* Home section */
+#home{
+    height: 327px;
+    padding: 8px 25px;
+
+}
+#home::before{
+    height: 436px;
+    
+}
+#home p{
+    font-size: 1.2rem;
+}
+/* Service section */
+#services{
+    flex-direction: column;
+}
+
+#services .box{
+    margin: 10px 10px;
+    
+}
+/* contact section */
+#contact-box form{
+    width: 80%;
+
+}
+.first{
+    font-size: 25px;
+}
